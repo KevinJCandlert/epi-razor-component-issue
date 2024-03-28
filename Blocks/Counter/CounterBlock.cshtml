@@ -1,0 +1,6 @@
+@using epi_razor_component_issue.Components
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model CounterBlock
+
+<h3>Hello Counter Block</h3>
+<component type="typeof(Counter)" render-mode="ServerPrerendered" />

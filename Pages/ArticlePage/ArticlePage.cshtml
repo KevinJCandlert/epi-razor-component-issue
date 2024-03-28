@@ -1,0 +1,19 @@
+﻿@page
+@using EPiServer.Web.Mvc.Html
+@using EPiServer.Web.Mvc.TagHelpers
+@model MyApp.Namespace.ArticlePageModel
+
+
+<h1>Hello @Model.CurrentContent.Name</h1>
+
+@* This works*@
+<div epi-property="CurrentContent.MainBody" />
+
+@* This works *@
+@Html.DisplayFor(x => x.CurrentContent.MainBody)
+
+@* This works *@
+@{ Html.RenderContentArea(Model.CurrentContent.MainBody); }
+
+@* This does not work *@
+@* @Html.PropertyFor(x => x.CurrentContent.MainBody) *@

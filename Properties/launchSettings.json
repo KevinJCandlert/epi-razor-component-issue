@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "epi-razor-component-issue": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:61355;http://localhost:61356"
+    }
+  }
+}
